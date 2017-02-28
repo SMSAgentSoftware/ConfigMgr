@@ -7,7 +7,7 @@
 
 ## Change History
 ##
-## v1.0 (2017-02-27) 
+## v1.0 (2017-02-28) 
 
 
 
@@ -18,8 +18,8 @@
 # Set the remote template path.  This is a common location that is accessible to everyone. 
 $RemoteTemplatePath = "\\<FileServer>\remotefiles\OfficeTemplates\Providers"
 
-# This prefix should be assigned to all Provider names, to allow the exclusion of default directories in the local templates folder, such as 1033, Presentation designs etc.  Used for cleanup.
-$ProviderPrefix = "<CompanyName>"
+# This is the root folder in the local template path where all the template providers and files will be created (eg, company name)
+$RootFolderName = "<CompanyName>"
 
 
 
@@ -37,11 +37,11 @@ $OSArch = Get-WmiObject -Class win32_operatingsystem | select -ExpandProperty OS
 # Set local template path by architecture
 If ($OSArch -eq "32-bit")
 {
-    $LocalTemplatePath = "$env:SystemDrive\Program Files\Microsoft Office\Templates"
+    $LocalTemplatePath = "$env:SystemDrive\Program Files\Microsoft Office\Templates\$RootFolderName"
 }
 If ($OSArch -eq "64-bit")
 {
-    $LocalTemplatePath = "$env:SystemDrive\Program Files (x86)\Microsoft Office\Templates"
+    $LocalTemplatePath = "$env:SystemDrive\Program Files (x86)\Microsoft Office\Templates\$RootFolderName"
 }
 
 
@@ -51,13 +51,21 @@ If ($OSArch -eq "64-bit")
 ## MAIN SCRIPT ##
 #################
 
+# Check that the root local template path exists
+If (!(Test-Path -Path "$LocalTemplatePath"))
+{ 
+    "Creating $LocalTemplatePath"
+    $TemplatePath = $LocalTemplatePath.Replace("\$RootFolderName","")
+    New-Item -Path "$TemplatePath" -Name "$RootFolderName" -ItemType container -Force | Out-Null
+}
+
+
 ################################
 ## PROVIDER DIRECTORY CLEANUP ##
 ################################
 
 # Check local template directory for any provider directories that have been removed in the remote location and remove them (cleanup)
 [array]$LocalProviders = (Get-ChildItem $LocalTemplatePath -Directory).Name
-$LocalProviders = $LocalProviders | where {$_ -match $ProviderPrefix}
 $LocalProviders | foreach {
     
     $Provider = $_

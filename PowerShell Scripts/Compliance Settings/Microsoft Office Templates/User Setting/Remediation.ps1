@@ -7,7 +7,7 @@
                                            
 ## Change History
 ##
-## v1.0 (2017-02-27)                                            
+## v1.0 (2017-02-28)                                            
 
 
 
@@ -18,8 +18,8 @@
 # Set the remote template path.  This is a common location that is accessible to everyone. 
 $RemoteTemplatePath = "\\<FileServer>\remotefiles\OfficeTemplates\Providers"
 
-# This prefix should be assigned to all Provider names and is used to determine the custom location the XML files are found locally
-$ProviderPrefix = "<CompanyName>"
+# This is the root folder in the local template path where all the template providers and files will be created (eg, company name)
+$RootFolderName = "<CompanyName>"
 
 # Office versions we will work with. This is used to determine the Office path in the HKCU registry
 $OfficeVersionKeys = @(
@@ -45,7 +45,7 @@ $OSArch = Get-WmiObject -Class win32_operatingsystem | select -ExpandProperty OS
 $UserTemplatePath = "$env:APPDATA\Microsoft\Templates"
 
 # This is the path to the custom folder we are using to store our XML files in the user's profile
-$CustomUserTemplatePath = "$UserTemplatePath\$ProviderPrefix"
+$CustomUserTemplatePath = "$UserTemplatePath\$RootFolderName"
 
 # Determine which Office version/s we have installed
 [array]$InstalledOfficeKeys = $null
@@ -83,7 +83,7 @@ If ($OSArch -eq "64-bit")
 # Check that the custom user template path exists
 If (!(Test-Path "$CustomUserTemplatePath"))
 {
-    New-Item -Path $UserTemplatePath -Name $ProviderPrefix -ItemType container -Force
+    New-Item -Path $UserTemplatePath -Name $RootFolderName -ItemType container -Force
 }
 
 # Check that the XML subfolder exists

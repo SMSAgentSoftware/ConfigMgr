@@ -67,12 +67,10 @@ $OfficeVersionKeys | Foreach {
 # Set the program files directory by architecture
 If ($OSArch -eq "32-bit")
 {
-    $ProgramFiles = "Program Files"
     $Architecture = "x86"
 }
 If ($OSArch -eq "64-bit")
 {
-    $ProgramFiles = "Program Files (x86)"
     $Architecture = "x64"
 }
 
@@ -245,7 +243,6 @@ $InstalledOfficeKeys | foreach {
         $RemoteXMLFile = (Get-ChildItem "$RemoteTemplatePath\$Provider\XML" -File -ErrorAction Stop).Name | where {$_ -match $Architecture}
 
         # Define what the ServiceURL value should be and find what it currently is
-        #$CorrectServiceUrl = "$env:SystemDrive\\$ProgramFiles\\Microsoft Office\\Templates\\$Provider\\$RemoteXMLFile"
         $CorrectServiceUrl = "$CustomUserTemplatePath\XML\$Provider\$RemoteXMLFile"
         $ActualServiceURL = Get-ItemProperty -Path "HKCU:\Software\Microsoft\Office\$OfficeVersionCode\Common\Spotlight\Providers\$Provider" -Name ServiceURL -ErrorAction SilentlyContinue | Select -ExpandProperty ServiceURL
             

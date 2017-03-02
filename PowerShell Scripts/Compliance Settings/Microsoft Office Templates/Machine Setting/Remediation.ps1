@@ -37,11 +37,11 @@ $OSArch = Get-WmiObject -Class win32_operatingsystem | select -ExpandProperty OS
 # Set local template path by architecture
 If ($OSArch -eq "32-bit")
 {
-    $LocalTemplatePath = "$env:SystemDrive\Program Files\Microsoft Office\Templates\$RootFolderName"
+    $LocalTemplatePath = "$env:ProgramFiles\Microsoft Office\Templates\$RootFolderName"
 }
 If ($OSArch -eq "64-bit")
 {
-    $LocalTemplatePath = "$env:SystemDrive\Program Files (x86)\Microsoft Office\Templates\$RootFolderName"
+    $LocalTemplatePath = "${env:ProgramFiles(x86)}\Microsoft Office\Templates\$RootFolderName"
 }
 
 

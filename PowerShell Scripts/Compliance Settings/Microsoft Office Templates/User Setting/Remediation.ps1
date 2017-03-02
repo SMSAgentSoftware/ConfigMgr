@@ -59,12 +59,10 @@ $OfficeVersionKeys | Foreach {
 # Set the program files directory by architecture
 If ($OSArch -eq "32-bit")
 {
-    $ProgramFiles = "Program Files"
     $Architecture = "x86"
 }
 If ($OSArch -eq "64-bit")
 {
-    $ProgramFiles = "Program Files (x86)"
     $Architecture = "x64"
 }
 

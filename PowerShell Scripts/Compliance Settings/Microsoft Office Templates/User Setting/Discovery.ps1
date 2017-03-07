@@ -5,11 +5,6 @@
 ###################################################
 
 
-## Change History
-##
-## v1.0 (2017-02-28)  
-
-
 
 ########################
 ## USER-SET VARIABLES ##
@@ -55,10 +50,10 @@ $UserTemplatePath = "$env:APPDATA\Microsoft\Templates"
 # This is the path to the custom folder we are using to store our XML files in the user's profile
 $CustomUserTemplatePath = "$UserTemplatePath\$RootFolderName"
 
-# Determine which Office version/s we have installed. If the "spotlight" branch exists, it should indicate that this version of office is installed and being used.
+# Determine which Office version/s we have installed. If the "LanguageResources" branch exists, it should indicate that at least one application in this version of office is installed and being used.
 [array]$InstalledOfficeKeys = $null
 $OfficeVersionKeys | Foreach {
-    If (Test-Path "HKCU:\Software\Microsoft\Office\$_\Common\Spotlight")
+    If (Test-Path "HKCU:\Software\Microsoft\Office\$_\Common\LanguageResources")
     {
         $InstalledOfficeKeys += $_
     }

@@ -4,12 +4,7 @@
 ##                                               ##
 ###################################################
 
-                                           
-## Change History
-##
-## v1.0 (2017-02-28)                                            
-
-
+                                                                                 
 
 ########################
 ## USER-SET VARIABLES ##
@@ -50,7 +45,7 @@ $CustomUserTemplatePath = "$UserTemplatePath\$RootFolderName"
 # Determine which Office version/s we have installed
 [array]$InstalledOfficeKeys = $null
 $OfficeVersionKeys | Foreach {
-    If (Test-Path "HKCU:\Software\Microsoft\Office\$_\Common\Spotlight")
+    If (Test-Path "HKCU:\Software\Microsoft\Office\$_\Common\LanguageResources")
     {
         $InstalledOfficeKeys += $_
     }
@@ -240,6 +235,9 @@ $InstalledOfficeKeys | foreach {
             }
         }
     }
+
+    # Build the list of providers existing in the local registry again since changes may just have been made
+    [array]$LocalRegistryProviders = (Get-ChildItem "HKCU:\Software\Microsoft\Office\$OfficeVersionCode\Common\Spotlight\Providers" -ErrorAction SilentlyContinue).PSChildName
 
     # Loop through the local providers in the registry
     $LocalRegistryProviders | foreach {

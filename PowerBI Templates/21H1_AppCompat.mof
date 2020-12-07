@@ -1,0 +1,55 @@
+// RegKeyToMOF by Mark Cochrane (with help from Skissinger, SteveRac, Jonas Hettich, Kent Agerlund & Barker)
+// this section tells the inventory agent what to report to the server
+// 24/11/2020 12:01:19
+
+#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+#pragma deleteclass("TwentyOneHOne", NOFAIL)
+[SMS_Report(TRUE),SMS_Group_Name("TwentyOneHOne"),SMS_Class_ID("TwentyOneHOne")]
+Class TwentyOneHOne: SMS_Class_Template
+{
+[SMS_Report(TRUE),key] string KeyName;
+[SMS_Report(FALSE)] String DX12;
+[SMS_Report(FALSE)] String GStatus;
+[SMS_Report(TRUE)] String GatedBlockId[];
+[SMS_Report(TRUE)] String GatedBlockReason[];
+[SMS_Report(FALSE)] String Guest;
+[SMS_Report(FALSE)] String MCE;
+[SMS_Report(TRUE)] String RedReason[];
+[SMS_Report(TRUE)] String UpgEx;
+[SMS_Report(TRUE)] String UpgExU;
+[SMS_Report(TRUE)] String DataExpDate;
+[SMS_Report(FALSE)] String DataExpDateEpoch;
+[SMS_Report(TRUE)] String DataRelDate;
+[SMS_Report(FALSE)] String DataRelDateEpoch;
+[SMS_Report(FALSE)] String OemPref;
+[SMS_Report(FALSE)] String SdbVer;
+[SMS_Report(TRUE)] String Version;
+[SMS_Report(FALSE)] String WIP;
+[SMS_Report(TRUE)] String AppraiserVersion;
+[SMS_Report(FALSE)] String Bat;
+[SMS_Report(FALSE)] String Bios;
+[SMS_Report(FALSE)] String BootSect;
+[SMS_Report(FALSE)] String ComfUp;
+[SMS_Report(FALSE)] String Comm;
+[SMS_Report(FALSE)] String Fam;
+[SMS_Report(FALSE)] String Fing;
+[SMS_Report(FALSE)] String Free;
+[SMS_Report(FALSE)] String Gamer;
+[SMS_Report(FALSE)] String GenTelRunTimestamp;
+[SMS_Report(FALSE)] String Genuine;
+[SMS_Report(FALSE)] String ISVM;
+[SMS_Report(FALSE)] String InboxDataVersion;
+[SMS_Report(FALSE)] String Mic;
+[SMS_Report(FALSE)] String OEM;
+[SMS_Report(FALSE)] String Office;
+[SMS_Report(FALSE)] String Paper;
+[SMS_Report(TRUE)] String Perf;
+[SMS_Report(FALSE)] String Proc;
+[SMS_Report(TRUE)] String SystemDriveTooFull;
+[SMS_Report(FALSE)] String Touch;
+[SMS_Report(TRUE)] String DataVer;
+[SMS_Report(TRUE)] String DataVerRecommended;
+[SMS_Report(TRUE)] String FailedPrereqs[];
+[SMS_Report(FALSE)] String TimestampEpochString;
+[SMS_Report(FALSE)] Uint64 Timestamp;
+};

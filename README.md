@@ -1,2 +1,2 @@
 # ConfigMgr
-System Center Configuration Manager related scripts and documents
+Microsoft Endpoint Configuration Manager related scripts and documents

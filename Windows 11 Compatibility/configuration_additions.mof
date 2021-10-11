@@ -1,0 +1,190 @@
+//====================
+// CO21H2 AppCompatFlags
+//====================
+
+#pragma namespace ("\\\\.\\root\\cimv2")
+#pragma deleteclass("COTwentyOneHTwo", NOFAIL)
+[DYNPROPS]
+Class COTwentyOneHTwo
+{
+[key] string KeyName;
+String DX12;
+String GStatus;
+String GatedBlockId[];
+String GatedBlockReason[];
+String Guest;
+String MCE;
+String RedReason[];
+String UpgEx;
+String UpgExU;
+String DataExpDate;
+String DataExpDateEpoch;
+String DataRelDate;
+String DataRelDateEpoch;
+String OemPref;
+String SdbVer;
+String Version;
+String WIP;
+String AppraiserVersion;
+String Bat;
+String Bios;
+String BootSect;
+String ComfUp;
+String Comm;
+String Fam;
+String Fing;
+String Free;
+String Gamer;
+String GenTelRunTimestamp;
+String Genuine;
+String ISVM;
+String InboxDataVersion;
+String Mic;
+String OEM;
+String Office;
+String Paper;
+String Perf;
+String Proc;
+String SystemDriveTooFull;
+String Touch;
+String DataVer;
+String DataVerRecommended;
+String FailedPrereqs[];
+String TimestampEpochString;
+Uint64 Timestamp;
+};
+
+[DYNPROPS]
+Instance of COTwentyOneHTwo
+{
+KeyName="RegKeyToMOF";
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|DX12"),Dynamic,Provider("RegPropProv")] DX12;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|GStatus"),Dynamic,Provider("RegPropProv")] GStatus;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|GatedBlockId"),Dynamic,Provider("RegPropProv")] GatedBlockId;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|GatedBlockReason"),Dynamic,Provider("RegPropProv")] GatedBlockReason;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Guest"),Dynamic,Provider("RegPropProv")] Guest;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|MCE"),Dynamic,Provider("RegPropProv")] MCE;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|RedReason"),Dynamic,Provider("RegPropProv")] RedReason;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|UpgEx"),Dynamic,Provider("RegPropProv")] UpgEx;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|UpgExU"),Dynamic,Provider("RegPropProv")] UpgExU;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|DataExpDate"),Dynamic,Provider("RegPropProv")] DataExpDate;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|DataExpDateEpoch"),Dynamic,Provider("RegPropProv")] DataExpDateEpoch;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|DataRelDate"),Dynamic,Provider("RegPropProv")] DataRelDate;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|DataRelDateEpoch"),Dynamic,Provider("RegPropProv")] DataRelDateEpoch;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|OemPref"),Dynamic,Provider("RegPropProv")] OemPref;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|SdbVer"),Dynamic,Provider("RegPropProv")] SdbVer;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Version"),Dynamic,Provider("RegPropProv")] Version;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|WIP"),Dynamic,Provider("RegPropProv")] WIP;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|AppraiserVersion"),Dynamic,Provider("RegPropProv")] AppraiserVersion;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Bat"),Dynamic,Provider("RegPropProv")] Bat;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Bios"),Dynamic,Provider("RegPropProv")] Bios;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|BootSect"),Dynamic,Provider("RegPropProv")] BootSect;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|ComfUp"),Dynamic,Provider("RegPropProv")] ComfUp;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Comm"),Dynamic,Provider("RegPropProv")] Comm;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Fam"),Dynamic,Provider("RegPropProv")] Fam;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Fing"),Dynamic,Provider("RegPropProv")] Fing;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Free"),Dynamic,Provider("RegPropProv")] Free;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Gamer"),Dynamic,Provider("RegPropProv")] Gamer;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|GenTelRunTimestamp"),Dynamic,Provider("RegPropProv")] GenTelRunTimestamp;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Genuine"),Dynamic,Provider("RegPropProv")] Genuine;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|ISVM"),Dynamic,Provider("RegPropProv")] ISVM;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|InboxDataVersion"),Dynamic,Provider("RegPropProv")] InboxDataVersion;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Mic"),Dynamic,Provider("RegPropProv")] Mic;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|OEM"),Dynamic,Provider("RegPropProv")] OEM;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Office"),Dynamic,Provider("RegPropProv")] Office;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Paper"),Dynamic,Provider("RegPropProv")] Paper;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Perf"),Dynamic,Provider("RegPropProv")] Perf;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Proc"),Dynamic,Provider("RegPropProv")] Proc;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|SystemDriveTooFull"),Dynamic,Provider("RegPropProv")] SystemDriveTooFull;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Touch"),Dynamic,Provider("RegPropProv")] Touch;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|DataVer"),Dynamic,Provider("RegPropProv")] DataVer;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|DataVerRecommended"),Dynamic,Provider("RegPropProv")] DataVerRecommended;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|FailedPrereqs"),Dynamic,Provider("RegPropProv")] FailedPrereqs;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|TimestampEpochString"),Dynamic,Provider("RegPropProv")] TimestampEpochString;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\CO21H2|Timestamp"),Dynamic,Provider("RegPropProv")] Timestamp;
+};
+
+//==========================
+// END CO21H2 AppCompatFlags
+//==========================
+
+
+//==============================
+// START CO21H2CM AppCompatFlags
+//==============================
+
+#pragma namespace ("\\\\.\\root\\cimv2")
+#pragma deleteclass("COTwentyOneHTwoCM", NOFAIL)
+[DYNPROPS]
+Class COTwentyOneHTwoCM
+{
+[key] string KeyName;
+String BlockedByBdd;
+String BlockedByBios;
+String BlockedByCloverTrail;
+String BlockedByComputerHardwareId;
+String BlockedByCpu;
+String BlockedByCpuFms;
+String BlockedByDeviceBlock;
+String BlockedByHardDiskController;
+String BlockedByMemory;
+String BlockedByNetwork;
+String BlockedBySModeState;
+String BlockedBySystemDriveSize;
+String BlockedBySystemDriveTooFull;
+String BlockedByTpmVersion;
+String BlockedByUefiSecureBoot;
+String BlockedByUpgradableBios;
+String Dx12SupportedDevice;
+String RAV;
+String Guest;
+String MediaCenterInUse;
+String UexRatingOrange;
+String UexRatingRed;
+String UexRatingYellow;
+String UexUsageRatingOrange;
+String UexUsageRatingYellow;
+String Version;
+String TimestampEpochString;
+Uint64 Timestamp;
+};
+
+[DYNPROPS]
+Instance of COTwentyOneHTwoCM
+{
+KeyName="RegKeyToMOF";
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByBdd"),Dynamic,Provider("RegPropProv")] BlockedByBdd;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByBios"),Dynamic,Provider("RegPropProv")] BlockedByBios;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByCloverTrail"),Dynamic,Provider("RegPropProv")] BlockedByCloverTrail;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByComputerHardwareId"),Dynamic,Provider("RegPropProv")] BlockedByComputerHardwareId;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByCpu"),Dynamic,Provider("RegPropProv")] BlockedByCpu;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByCpuFms"),Dynamic,Provider("RegPropProv")] BlockedByCpuFms;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByDeviceBlock"),Dynamic,Provider("RegPropProv")] BlockedByDeviceBlock;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByHardDiskController"),Dynamic,Provider("RegPropProv")] BlockedByHardDiskController;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByMemory"),Dynamic,Provider("RegPropProv")] BlockedByMemory;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByNetwork"),Dynamic,Provider("RegPropProv")] BlockedByNetwork;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedBySModeState"),Dynamic,Provider("RegPropProv")] BlockedBySModeState;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedBySystemDriveSize"),Dynamic,Provider("RegPropProv")] BlockedBySystemDriveSize;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedBySystemDriveTooFull"),Dynamic,Provider("RegPropProv")] BlockedBySystemDriveTooFull;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByTpmVersion"),Dynamic,Provider("RegPropProv")] BlockedByTpmVersion;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByUefiSecureBoot"),Dynamic,Provider("RegPropProv")] BlockedByUefiSecureBoot;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|BlockedByUpgradableBios"),Dynamic,Provider("RegPropProv")] BlockedByUpgradableBios;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|Dx12SupportedDevice"),Dynamic,Provider("RegPropProv")] Dx12SupportedDevice;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|RAV"),Dynamic,Provider("RegPropProv")] RAV;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|Guest"),Dynamic,Provider("RegPropProv")] Guest;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|MediaCenterInUse"),Dynamic,Provider("RegPropProv")] MediaCenterInUse;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|UexRatingOrange"),Dynamic,Provider("RegPropProv")] UexRatingOrange;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|UexRatingRed"),Dynamic,Provider("RegPropProv")] UexRatingRed;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|UexRatingYellow"),Dynamic,Provider("RegPropProv")] UexRatingYellow;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|UexUsageRatingOrange"),Dynamic,Provider("RegPropProv")] UexUsageRatingOrange;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|UexUsageRatingYellow"),Dynamic,Provider("RegPropProv")] UexUsageRatingYellow;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|Version"),Dynamic,Provider("RegPropProv")] Version;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|TimestampEpochString"),Dynamic,Provider("RegPropProv")] TimestampEpochString;
+[PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\\CO21H2|Timestamp"),Dynamic,Provider("RegPropProv")] Timestamp;
+};
+
+
+//============================
+// END CO21H2CM AppCompatFlags
+//============================
+

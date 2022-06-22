@@ -1,0 +1,8 @@
+CM_CCMSetupReturnCodes_CL
+| summarize arg_max(TimeGenerated,*) by AADDeviceID_g
+| project
+    ComputerName=ComputerName_s,
+    AADDeviceID=AADDeviceID_g,
+    ReturnCode=ReturnCode_s,
+    Date=Date_t, 
+    Age_Days=Age_Days_d

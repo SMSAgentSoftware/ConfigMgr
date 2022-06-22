@@ -1,0 +1,14 @@
+CM_CCMSetupErrorLog_CL
+| top-nested of AADDeviceID=AADDeviceID_g by temp=max(1),
+    top-nested 1 of DatePosted=DatePosted_t by temp1=max(DatePosted_t),
+    top-nested of LogText=LogText_s by temp2=max(1),
+    top-nested of DateTime=DateTime_t by temp3=max(1),
+    top-nested of component=component_s by temp4=max(1),
+    top-nested of type=type_d by temp5=max(1),
+    top-nested of thread=thread_d by temp6=max(1),
+    top-nested of file=file_s by temp7=max(1),
+    top-nested of LineNumber=LineNumber_d by temp8=max(1),
+    top-nested of ComputerName=ComputerName_s by temp9=max(1),
+    top-nested of context=context_s by temp10=max(1)
+| project-away temp*
+| order by LineNumber desc 

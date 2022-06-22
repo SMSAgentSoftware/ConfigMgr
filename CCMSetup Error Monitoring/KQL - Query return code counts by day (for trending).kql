@@ -1,0 +1,4 @@
+CM_CCMSetupReturnCodes_CL
+| where ReturnCode_s !in (0,7) and isnotempty(ReturnCode_s)
+| summarize Count=count() by bin(TimeGenerated,1d),ReturnCode=ReturnCode_s
+| order by TimeGenerated desc 

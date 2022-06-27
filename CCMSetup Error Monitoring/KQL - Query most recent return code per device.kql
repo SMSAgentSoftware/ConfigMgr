@@ -5,4 +5,6 @@ CM_CCMSetupReturnCodes_CL
     AADDeviceID=AADDeviceID_g,
     ReturnCode=ReturnCode_s,
     Date=Date_t, 
-    Age_Days=Age_Days_d
+    ReturnCodeAge_Days=datetime_diff('day',now(),Date_t),
+    TimeGenerated,
+    DataFreshness_Days=datetime_diff('day',now(),TimeGenerated)

@@ -1,0 +1,7 @@
+CM_CCMSetupReturnCodes_CL
+| summarize arg_max(TimeGenerated,*) by AADDeviceID_g
+| where ReturnCode_s in (0,7)
+| where datetime_diff('day',now(),Date_t) <= 60
+| summarize Count=count() by bin(TimeGenerated,1d),ReturnCode=ReturnCode_s,ReturnCodeDate=Date_t
+| summarize Count=count() by bin(ReturnCodeDate,1d),ReturnCode
+| order by ReturnCodeDate desc 
